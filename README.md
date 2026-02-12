@@ -17,6 +17,19 @@
 # 使用当前目录（当前目录必须是 Godot 项目）
 python extract_godot_images.py
 
+# 指定项目路径
+python extract_godot_images.py C:\MyGame
+
+# 路径包含空格时使用引号
+python extract_godot_images.py "D:\Godot Projects\MyGame"
+```
+
+### 指定输出目录
+
+```bash
+python extract_godot_images.py C:\MyGame -o D:\Output
+```
+
 ## 工作原理
 
 1. 扫描项目目录下的 `.godot/imported/` 文件夹
